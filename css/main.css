@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Recursive:wght@300&family=Roboto:wght@100;500&display=swap');
+
+@font-face {
+    font-family: 'Handon3gyeopsal300g';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.2/Handon3gyeopsal300g.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* TYPHOGRAPHY */
+/*font-family: 'Recursive',
+sans-serif;
+font-family: 'Roboto',
+sans-serif;
+*/
+body {
+    font-family: 'Recursive',
+        'Handon3gyeopsal300g',
+        sans-serif;
+    font-size: 30px;
+}
+
+h3,
+h4 {
+    font-family: 'Roboto',
+        sans-serif;
+}
+
+.sec_tit {
+    text-align: center;
+    color: #fff;
+    padding-top: 40px;
+}
+
+/* LAYOUT */
+section {
+    background-color: #919191 !important;
+    height: 100vh;
+    width: 100%;
+
+}
+
+/* NAV */
+nav {
+    position: absolute;
+    width: 20%;
+    height: 100vh;
+    background: #fff;
+    left: -20%;
+
+}
+
+/* HOME */
+.home {
+    position: relative;
+    background: url(../images/yujin.png) no-repeat center bottom;
+}
+
+.home .main_ment {
+    text-align: center;
+    padding-top: 120px;
+}
+
+.home h3 {
+    font-size: 80px;
+
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.7)
+}
+
+.home h4 {
+    font-weight: 100;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.7)
+}
+
+/* GALLERY */
+/* CONTACT */
+/* ETC */
