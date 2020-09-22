@@ -8,14 +8,14 @@
 }
 
 /* TYPHOGRAPHY */
-/*font-family: 'Recursive',
+/*
+font-family: 'Recursive',
 sans-serif;
 font-family: 'Roboto',
 sans-serif;
 */
 body {
     font-family: 'Recursive',
-        'Handon3gyeopsal300g',
         sans-serif;
     font-size: 30px;
 }
@@ -29,7 +29,7 @@ h4 {
 .sec_tit {
     text-align: center;
     color: #fff;
-    padding-top: 40px;
+    padding-top: 60px;
 }
 
 /* LAYOUT */
@@ -41,7 +41,18 @@ section {
 }
 
 /* NAV */
-nav {
+.nav_left {
+    position: relative;
+    z-index: 5;
+}
+
+.nav_left .toggle {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.nav_left nav {
     position: absolute;
     width: 20%;
     height: 100vh;
@@ -75,5 +86,102 @@ nav {
 }
 
 /* GALLERY */
+.gallery {
+    position: relative;
+}
+
+.gallery .gallery_list {
+    display: flex;
+    justify-content: space-between;
+    width: 960px;
+    margin: 150px auto 0;
+}
+
+.gallery .gallery_list li {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-color: #ffabab;
+    position: relative;
+    box-shadow: 0 7px 17px rgba(0, 0, 0, 0.07);
+    transition: 0.3s ease-out;
+    opacity: 0.8;
+}
+
+.gallery .gallery_list li:hover {
+    transform: scale(1.2);
+    opacity: 1;
+    box-shadow: none;
+}
+
+.gallery .gallery_list li a {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 180px;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 26px;
+}
+
+
+
+
+.gallery .black_bg {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    font-family: 'Handon3gyeopsal300g';
+}
+
+.gallery .black_bg.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.gallery .black_bg>div {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.gallery .black_bg>div.on {
+    display: block;
+
+}
+
+.gallery .black_bg>div .desc {
+    color: #fff;
+    font-size: 18px;
+    line-height: 38px;
+}
+
+
+a.go_site {
+    color: #ddd;
+    font-size: 16px;
+    display: inline-block;
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    left: 30%;
+    bottom: -80px;
+}
+
+
 /* CONTACT */
 /* ETC */
