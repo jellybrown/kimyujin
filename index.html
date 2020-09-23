@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="kr">
 
 <head>
     <meta charset="UTF-8">
@@ -8,16 +8,24 @@
     <!-- style -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
-
+    <link rel="stylesheet" href="css/mobile.css">
 
     <!-- CDN & js -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/page_jquery.js"></script>
 </head>
 
 <body>
     <h1 class="hidden">portfolio site - yujin</h1>
     <div class="nav_left">
-        <h2 class="toggle">all menu</h2>
+        <a href="#a" class="toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
         <nav>
             <ul class="menu">
                 <li><a href="#a">Home</a></li>
@@ -25,7 +33,9 @@
                 <li><a href="#a">Contact</a></li>
                 <li><a href="#a">etc</a></li>
             </ul>
+
         </nav>
+
     </div><!-- //nav_left -->
 
     <section class="home">
@@ -33,6 +43,10 @@
         <div class="main_ment">
             <h3>Nice to meet you !</h3>
             <h4>welcome to my portfolio site.</h4>
+        </div>
+        <div class="slide_btn">
+            <span class="prev hidden"><i class="fas fa-chevron-up"></i></span>
+            <span class="next"><i class="fas fa-chevron-down"></i></span>
         </div>
     </section><!-- //home -->
 
@@ -50,48 +64,120 @@
                     <p>&middot; 시간이 없다면, 이 사이트만 봐주세요 !</p>
                     <p>&middot; 9페이지 구성 (서브메뉴는 인재채용 - mypage 만 있습니다)</p>
                     <p>&middot; cj홈페이지 전반적으로 비슷하게 구현</p>
-                    <p>&middot; 최근 완성작품, 기여도100%</p>
+                    <p>&middot; 최근 완성작품, 혼자 100%</p>
                 </div>
                 <a href="#a" class="go_site">바로가기</a>
             </div><!-- //cj -->
             <div class="content amore">
                 <div class="desc">
-                    <p>&middot; </p>
-                    <p>&middot;</p>
-                    <p>&middot; </p>
-                    <p>&middot; </p>
+                    <p>&middot; 1페이지 구성</p>
+                    <p>&middot; 반응형 페이지</p>
+                    <p>&middot; 처음 작업한 페이지, 혼자 100%</p>
+
                 </div>
-                <a href="#a">바로가기</a>
+                <a href="#a" class="go_site">바로가기</a>
             </div><!-- //amore -->
             <div class="content laptit">
                 <div class="desc">
-                    <p>&middot; </p>
-                    <p>&middot;</p>
-                    <p>&middot; </p>
-                    <p>&middot; </p>
+                    <p>&middot; 1페이지 구성</p>
+                    <p>&middot; 디저트 홈페이지</p>
+                    <p>&middot; 혼자 100%</p>
+
                 </div>
-                <a href="#a">바로가기</a>
+                <a href="#a" class="go_site">바로가기</a>
             </div><!-- //laptit -->
             <div class="content shopy">
                 <div class="desc">
-                    <p>&middot; </p>
-                    <p>&middot;</p>
-                    <p>&middot; </p>
-                    <p>&middot; </p>
+                    <p>&middot; 3페이지 구성</p>
+                    <p>&middot; bootstrap 레이아웃 이용</p>
+                    <p>&middot; 유투브 따라하기, 혼자 0%</p>
+
                 </div>
-                <a href="#a">바로가기</a>
+                <a href="#a" class="go_site">바로가기</a>
             </div><!-- //shopy -->
+        </div>
+        <div class="slide_btn">
+            <span class="prev"><i class="fas fa-chevron-up"></i></span>
+            <span class="next"><i class="fas fa-chevron-down"></i></span>
         </div>
     </section><!-- //gallery -->
 
     <section class="contact">
         <h2 class="sec_tit">Contact</h2>
+        <div class="icons">
+            <div class="email"><a href="./mail.html" target="_blank">
+                    <div class="contents">
+                        <img src="images/mail_icon.png" alt="send a email page">
+                        <span>send a email</span>
+                        <!-- Icon made by Kiranshastry from www.flaticon.com -->
+                    </div>
+                </a></div>
+            <div class="phone">
+                <div class="contents">
+                    <img src="images/phone_icon.png" alt="phone icon">
+                    <span>010<br>5060<br>7342</span>
+                    <!-- Icon made by Gregor Cresnar from www.flaticon.com -->
+                </div>
+            </div>
+        </div>
+        <div class="slide_btn">
+            <span class="prev"><i class="fas fa-chevron-up"></i></span>
+            <span class="next"><i class="fas fa-chevron-down"></i></span>
+        </div>
     </section><!-- //contact -->
 
     <section class="etc">
         <h2 class="sec_tit">etc</h2>
+        <div class="card_wrapper">
+            <div class="card">
+                <div class="front">
+                    <div class="contents">
+                        <img src="images/git_icon.png" alt="">
+                        <span class="content_title">github</span>
+                    </div>
+                </div>
+                <div class="back">
+                    <a href="https://github.com/jellybrown" target="_blank">
+                        <p>포트폴리오 소스들을<br /> 보실 수 있습니다.</p>
+                    </a>
+                </div>
+            </div><!-- //git -->
+            <div class="card">
+                <div class="front">
+                    <div class="contents">
+                        <img src="images/com_icon.png" alt="">
+                        <span class="content_title">blog</span>
+                    </div>
+                </div>
+                <div class="back">
+                    <a href="https://jellybrown.tistory.com" target="_blank">
+                        <p>공부용 블로그입니다.</p>
+                    </a>
+                </div>
+            </div><!-- //blog -->
+            <div class="card">
+                <div class="front">
+                    <div class="contents">
+                        <img src="images/cer_icon.png" alt="">
+                        <span class="content_title">certificate</span>
+                    </div>
+                </div>
+                <div class="back">
+                    <div class="contents">
+                        <p>정보처리산업기사</p>
+                        <p>GTQ 1급</p>
+                    </div>
+                </div>
+            </div><!-- //certification -->
+        </div>
+        <div class="slide_btn">
+            <span class="prev"><i class="fas fa-chevron-up"></i></span>
+            <span class="next hidden"><i class="fas fa-chevron-down"></i></span>
+        </div>
     </section><!-- //etc -->
 
+    <!-- Other icons made by Freepik from www.flaticon.com -->
+    <!-- 한글서체 마포꽃섬 출처 www.mapo.go.kr -->
 </body>
 
 </html>

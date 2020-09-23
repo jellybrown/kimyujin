@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'MapoFlowerIsland';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoFlowerIslandA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'MapoFlowerIsland';
+    background: #ddd;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+aside {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+h2 {
+    margin: 0 auto 20px;
+    font-size: 40px;
+    width: 70px;
+    height: 60px;
+    background: cornflowerblue;
+    text-align: center;
+    line-height: 62px;
+    border-radius: 6px;
+    color: rgba(255, 255, 255, 0.8)
+}
+
+.form-elements {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'MapoFlowerIsland';
+}
+
+
+
+.pure-group label {
+    margin-bottom: 10px;
+}
+
+input,
+textarea {
+    width: 500px;
+    border: none;
+    background: rgb(252, 246, 246);
+}
+
+button.pure-button {
+    background: rgba(255, 255, 255, 0.8);
+    transition: 0.5s;
+    border: none;
+    width: 200px;
+    height: 50px;
+    margin-top: 30px;
+    border-radius: 2px;
+
+}
+
+button.pure-button:hover {
+    background: cornflowerblue;
+    color: #fff;
+
+
+}
+
+.thankyou_message {
+    text-align: center;
+
+}
+
+.thankyou_message h2 {
+    width: auto;
+    display: inline-block;
+    padding: 0 20px;
+
+}

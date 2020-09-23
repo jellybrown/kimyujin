@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="yujin's portfolio site에서 이메일 문의하기">
+    <title>이메일 - yujin's portfolio site</title>
+
+    <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"
+        integrity="sha384-3Nqiqht3ZZEO8FKj7GR1upiI385J92VwWNLj+FqHxtLYxd9l+WYpeqSOrLh0T12c" crossorigin="anonymous">
+    </script>
+
+</head>
+
+<body>
+    <h2 class="content-head is-center"><i class="far fa-envelope"></i></h2>
+
+
+    <!-- START HERE -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- Style The Contact Form How Ever You Prefer -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/mail.css">
+    <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
+        action="https://script.google.com/macros/s/AKfycbxXqK4tIktpcSzgp4B8zE4u-5PUeEct-Ze1lN9nfg/exec">
+        <!-- change the form action to your script url -->
+
+        <div class="form-elements">
+            <fieldset class="pure-group">
+                <label for="name">작성자 </label>
+                <input id="name" name="name" placeholder="성함또는 회사이름을 적어주세요" />
+            </fieldset>
+
+            <fieldset class="pure-group">
+                <label for="message">내용 </label>
+                <textarea id="message" name="message" rows="10" placeholder="하실말씀 적어주세요 ^ㅁ^"></textarea>
+            </fieldset>
+
+            <fieldset class="pure-group">
+                <label for="email">답장받으실 이메일 또는</label>
+                <input id="email" name="email" type="email" value="" placeholder="hello@email.com" />
+            </fieldset>
+
+            <fieldset class="pure-group">
+                <label for="phone">연락받으실 번호 </label>
+                <input id="phone" name="phone" placeholder="010-1234-5678" />
+            </fieldset>
+
+            <fieldset class="pure-group honeypot-field">
+                <label for="honeypot">스팸방지를 위해, 입력창을 하나 더 넣었습니다. 칸을 비워주세요!</label>
+                <input id="honeypot" type="text" name="honeypot" value="" />
+            </fieldset>
+
+            <button class="button-success pure-button button-xlarge">
+                보내기</button>
+        </div>
+
+        <!-- Customise the Thankyou Message People See when they submit the form: -->
+        <div class="thankyou_message" style="display:none;">
+            <h2> 문의주셔서 감사합니다~ 확인후 답장드리겠습니다! </h2>
+        </div>
+
+
+    </form>
+
+    <!-- Submit the Form to Google Using "AJAX" -->
+    <script data-cfasync="false" src="form-submission-handler.js"></script>
+    <!-- END -->
+    <!-- email 결과페이지 가리기 -->
+    <script data-cfasync="false" type="text/javascript"
+        src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js">
+    </script>
+</body>
+
+</html>
