@@ -253,7 +253,22 @@ section {
 
 .home .main_ment {
     text-align: center;
+    opacity: 0;
     padding-top: 120px;
+    animation: mentfadeIn 1.5s forwards ease;
+    animation-delay: 0.5s;
+}
+
+@keyframes mentfadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .home h3 {
