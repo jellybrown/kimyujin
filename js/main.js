@@ -133,18 +133,29 @@ window.addEventListener('DOMContentLoaded', function () {
         });
     })
 
+
+
     //창 resize시 창맞추기, 맞춰지면 btns 활성화
-    $(window).resize(function () {
-        const currentTop = section.eq(currentIdx).offset().top;
-        $('html').stop().animate({
-            scrollTop: currentTop
-        }, 100 / 1000, function () {
-            btnOn = setTimeout(function () {
-                btns.eq(currentIdx).addClass('active')
-            }, 1000)
+    if ($(window).width() > 739) {
+        $(window).resize(function () {
+            const currentTop = section.eq(currentIdx).offset().top;
+            $('html').stop().animate({
+                scrollTop: currentTop
+            }, 100 / 1000, function () {
+                btnOn = setTimeout(function () {
+                    btns.eq(currentIdx).addClass('active')
+                }, 1000)
+            })
+
+
         })
+    } else {
+        btnOn = setTimeout(function () {
+            btns.eq(currentIdx).addClass('active')
+        }, 1000)
+
+    }
 
 
-    })
 
 })
