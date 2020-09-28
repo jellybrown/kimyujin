@@ -445,15 +445,13 @@ a.go_site {
 
 /* ETC */
 
-.etc {
-    perspective: 1000px;
-}
 
 .card_wrapper {
     display: flex;
     justify-content: space-between;
     width: 900px;
     margin: 160px auto 0;
+    perspective: 2000px;
 
 
 }
@@ -464,6 +462,7 @@ a.go_site {
     height: 220px;
     transform: rotateY(0);
     transform-style: preserve-3d;
+
     transition: 1s;
     box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.2);
     cursor: pointer;
@@ -478,11 +477,10 @@ a.go_site {
     width: 100%;
     height: 100%;
     -webkit-backface-visibility: hidden;
-    /* 사파리 브라우저 호환 */
+    -moz-backface-visibility: hidden;
     backface-visibility: hidden;
 }
 
-.card .front {}
 
 .card .front .contents {
     display: flex;
@@ -525,8 +523,8 @@ a.go_site {
     width: 40%;
 }
 
-.card .back .contents {}
 
 .card:hover {
     transform: rotateY(180deg);
+
 }
